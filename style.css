@@ -1,0 +1,49 @@
+body{
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(45deg,#061de3,#e306ca);
+    color: rgb(211,211,211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    font-size: 45px;
+  
+}
+p{
+    padding-top: 40%;
+   text-align: center;
+   
+}
+.card{
+    width: 350px;
+    height: 500px;
+ 
+
+}
+.card-inner{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 2000ms;
+    transform-style: preserve-3d;
+}
+.card:hover>.card-inner{
+transform: rotateY(180deg);
+}
+.card-front,.card-back{
+    height: 100%;
+    width: 100%;
+    border-radius: 3rem;
+    box-shadow: 0 0 5px 2px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.card-front{
+    background-image:url(https://imgs.search.brave.com/opBdsgi1bw5FQt757Y2LjaWOJJpR4EFiO_zf1_m7d4E/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudWFjZG4ubmV0/L2VkdWNhdG9yX25l/dy9wcm9jZXNzZWRf/aW1hZ2UvOTM5MTJE/NjctMUIwOC00RDY0/LUEwNTMtRUExNUU0/QkFGMTI4Xy5wbmc_/cT03NSZhdXRvPWZv/cm1hdCxjb21wcmVz/cyZ3PTI1Ng);
+background-size: cover;
+}
+.card-back{
+  background-color: #3a3a3a;
+    transform: rotateY(180deg);
+}
